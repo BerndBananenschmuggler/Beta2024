@@ -21,6 +21,11 @@ public class ComboAttack : MonoBehaviour
         _lastAttackTime = Time.time;
     }
 
+    private void OnDestroy()
+    {
+        PlayerAttack.OnAttack -= HandleAttack;
+    }
+
     private void HandleAttack(string currentAttack)
     {
         if (_lastAttack == null) _timeSinceLastAttack = -1;
