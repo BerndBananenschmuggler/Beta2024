@@ -13,17 +13,12 @@ public class ComboAttack : MonoBehaviour
     private float _lastAttackTime;
 
     public event Action<float> OnComboTime;
+    
     // Start is called before the first frame update
     void Start()
     {
         PlayerAttack.OnAttack += HandleAttack;
         _lastAttackTime = Time.time;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void HandleAttack(string currentAttack)
