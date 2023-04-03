@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: New Combo Stats SO
   m_EditorClassIdentifier: 
   comboCooldown: 0
-  phaseOne: 0
-  phaseTwo: 0
-  phaseThree: 0
-  phaseFour: 0
-  phaseFive: 0
+  phaseOne: 0.25
+  phaseTwo: 0.2
+  phaseThree: 0.1
+  phaseFour: 0.2
+  phaseFive: 0.25
